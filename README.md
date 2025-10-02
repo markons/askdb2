@@ -28,12 +28,16 @@ This project demonstrates how to connect an IBM Db2 database to a large language
 pip install ibm_db sqlalchemy langchain langchain-community langchain-openai tabulate
 
 2. Configure Environment
-Set your DB2 credentials and OpenAI API key:
-DB_USERNAME = "your-user"
-DB_PASSWORD = "your-pw"
-DB_HOST     = "localhost"
-DB_PORT     = "25000"
-DB_NAME     = "SAMPLE"
+Set your Db2 credentials and OpenAI API key:
+
+|  Variable   | Value          |
+|-------------|----------------|
+| DB_USERNAM  |  "your-user"   |
+| DB_PASSWOR  |  "your-pw"     |    
+| DB_HOST     |  "localhost"   |
+| DB_PORT     |  "25000"       |
+| DB_NAME     |  "SAMPLE"      |
+
 export OPENAI_API_KEY=your-openai-key
 
 3. Windows DLL Path Setup (Optional)
@@ -44,7 +48,7 @@ If you're on Windows, the script automatically adds common DB2 client paths to t
 Run the script:
 - python db2_langchain_agent.py
 - Edit the query_input variable to test different natural language queries, e.g.:
-query_input += "List all departments and the number of employees in each."
+query_input += **"List all departments and the number of employees in each."**
 
 ## 📌 The agent will:
 
